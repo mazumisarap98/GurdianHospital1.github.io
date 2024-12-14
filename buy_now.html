@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now - Guardian Care Medical Center</title>
+    <link rel="stylesheet" href="buy_now.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="LOGO.webp" alt="Hospital Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs&ContactUs.html">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Doctors.html">Doctors</a></li>
+                <li><a href="Reservations.html">Consulting Reservations</a></li>
+                <li><a href="pharmacy1.html">Pharmacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Buy Now</h2>
+        <table id="buy-now-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="buy-now-body"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Grand Total</td>
+                    <td id="grand-total">LKR 0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Personal Details</h2>
+        <form id="purchase-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <h2>Delivery Details</h2>
+            <div>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div>
+                <label for="postal-code">Postal Code:</label>
+                <input type="text" id="postal-code" name="postal-code" required>
+            </div>
+
+            <h2>Payment Details</h2>
+            <div>
+                <input type="radio" id="cash-on-delivery" name="payment-method" value="COD" checked>
+                <label for="cash-on-delivery">Cash on Delivery</label>
+            </div>
+            <div>
+                <input type="radio" id="card-payment" name="payment-method" value="card">
+                <label for="card-payment">Card Payment</label>
+            </div>
+
+            <div id="card-details" style="display: none;">
+                <div>
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number">
+                </div>
+                <div>
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="text" id="expiry-date" name="expiry-date">
+                </div>
+                <div>
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv">
+                </div>
+            </div>
+
+            <button type="submit" id="confirm-purchase">Confirm Purchase</button>
+        </form>
+
+        <p id="thank-you-message" style="display: none;">Thank you for your purchase! Your delivery is expected to arrive on <span id="delivery-date"></span>.</p>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Location</h3>
+            <p>GuardianCare Medical Center</p>
+            <p>9/01 Main Street, Colombo 01,</p>
+            <p>Western Province, Sri Lanka</p>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>Email: contact@guardiancare.com</p>
+            <p>Phone: +123-456-7890</p>
+            <p>Emergency Hotline: 1800-123-456</p>
+        </div>
+        <div class="footer-column">
+            <h3>Branches</h3>
+            <p>Main Branch - Colombo</p>
+            <p>R&D Center - Kandy</p>
+            <p>Medical Branch - Jaffna</p>
+        </div>
+        <div class="footer-column">
+            <h3>Awards</h3>
+            <p>Best Medical Center - 2022</p>
+            <p>Excellence in Patient Care - 2021</p>
+            <p>Innovative Healthcare Award - 2020</p>
+        </div>
+    </footer>
+
+    <script src="buy_now.js"></script>
+</body>
+</html>

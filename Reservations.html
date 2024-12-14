@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurdian Care Medical Center - Reservation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon_io/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="LOGO.webp" alt="Hospital Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs&ContactUs.html">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Doctors.html">Doctors</a></li>
+                <li><a href="Reservations.html">Consulting Reservations</a></li>
+                <li><a href="pharmacy1.html">Pharmacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="consulting-reservation">
+            <h1>Consulting Reservation</h1>
+            <form class="reservation-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="tel" id="contactNumber" name="contactNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="doctor">Select Doctor:</label>
+                    <select id="doctor" name="doctor" required>
+                        <option value="">Select a doctor</option>
+                        <option value="doctor1">Dr. John Doe</option>
+                        <option value="doctor2">Dr. Jane Smith</option>
+                        <option value="doctor2">Dr. Sarah Thompson</option>
+                        <option value="doctor2">Dr. Benjamin Brown</option>
+                        <option value="doctor2">Dr. David Garcia</option>
+                        <option value="doctor2">Dr. Laura Wilson</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="preferredDate">Preferred Date:</label>
+                    <input type="date" id="preferredDate" name="preferredDate" required>
+                </div>
+                <div class="form-group">
+                    <label>Consultation Type:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="inPerson" name="consultationType" value="inPerson" required>
+                        <label for="inPerson">In-Person</label>
+                        <input type="radio" id="virtual" name="consultationType" value="virtual">
+                        <label for="virtual">Virtual</label>
+                        <!-- Radio buttons allow users to select one option from a group of choices(YOUTUBE-TUTORIAL) -->
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Notes/Concerns:</label>
+                    <textarea id="notes" name="notes"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="reset" class="clear-btn">Clear</button>
+                </div>
+            </form>
+            <div class="emergency-info">
+                <p>All branches offer 24/7 emergency services.</p>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-column">
+        <h3>Location</h3>
+        <p>GuardianCare Medical Center</p>
+        <p>9/01 Main Street, Colombo 01,</p>
+        <p> Western Province, Sri Lanka</p>
+    </div>
+
+    <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>Email: contact@guardiancare.com</p>
+        <p>Phone: +123-456-7890</p>
+        <p>Emergency Hotline: 1800-123-456</p>
+    </div>
+
+    <div class="footer-column">
+        <h3>Branches</h3>
+        <p>Main Branch - Colombo</p>
+        <p>R&D Center - Kandy</p>
+        <p>Medical Branch - Jaffna</p>
+    </div>
+
+    <div class="footer-column">
+        <h3>Awards</h3>
+        <p>Best Medical Center - 2022</p>
+        <p>Excellence in Patient Care - 2021</p>
+        <p>Innovative Healthcare Award - 2020</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #272b5f; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.logo-container {
+    flex-grow: 1;
+}
+
+.logo {
+    height: 100px; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Registration Section */
+.registration-section {
+    background-color: #e5eaf5;
+    padding: 40px;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.registration-section h2 {
+    color: #272b5f;
+    margin-bottom: 20px;
+}
+
+.registration-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.registration-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #272b5f;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.submit-btn,
+.clear-btn {
+    background-color: #272b5f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.submit-btn,
+.clear-btn:hover {
+    background-color: #1e224f;
+}
+.submit-btn :active {
+    opacity: 0.5;
+}
+
+.registration-section input[type="checkbox"] {
+    margin-right: 10px;
+}
+.footer {
+    background-color: #272b5f; 
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.footer-column {
+    width: 23%; /* Four columns, each taking up roughly a quarter of the width */
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* Header */
+/* Header Media Query for Mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center; /* Keep everything else centered */
+        padding: 10px;
+    }
+
+    .logo {
+        height: 80px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    nav ul {
+        font-style: italic;
+        flex-direction: column;
+        padding-top: 10px;
+        width: 100%;
+        align-items: center; /* Keep navigation centered */
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .logo img {
+        max-width: 100px;
+    }
+
+    .registration-section {
+        padding: 15px;
+    }
+
+    .registration-section h2 {
+        font-size: 20px;
+    }
+
+    .registration-section p {
+        font-size: 13px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 10px;
+        
+    }
+    
+}
+/*FOOTER*/
+@media (min-width: 320px) and (max-width: 768px) {
+    .footer {
+        flex-direction: column; 
+        padding: 20px; 
+        text-align: center; 
+    }
+
+    .footer-column {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .footer h3 {
+        font-size: 16px; 
+    }
+
+    .footer p {
+        font-size: 12px; 
+    }
+}

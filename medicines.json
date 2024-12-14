@@ -1,0 +1,52 @@
+{
+    "analgesics": [
+        { "name": "Paracetamol", "price": 10 },
+        { "name": "Ibuprofen", "price": 12 },
+        { "name": "Aspirin", "price": 15 },
+        { "name": "Acetaminophen", "price": 8 },
+        { "name": "Naproxen", "price": 14 },
+        { "name": "Diclofenac", "price": 16 },
+        { "name": "Tramadol", "price": 18 },
+        { "name": "Oxycodone", "price": 20 }
+    ],
+    "antibiotics": [
+        { "name": "Amoxicillin", "price": 20 },
+        { "name": "Ciprofloxacin", "price": 25 },
+        { "name": "Doxycycline", "price": 18 },
+        { "name": "Azithromycin", "price": 22 },
+        { "name": "Cephalexin", "price": 17 },
+        { "name": "Clindamycin", "price": 30 },
+        { "name": "Levofloxacin", "price": 24 },
+        { "name": "Ofloxacin", "price": 23 }
+    ],
+    "antidepressants": [
+        { "name": "Fluoxetine", "price": 15 },
+        { "name": "Sertraline", "price": 20 },
+        { "name": "Paroxetine", "price": 18 },
+        { "name": "Venlafaxine", "price": 22 },
+        { "name": "Escitalopram", "price": 19 },
+        { "name": "Bupropion", "price": 25 },
+        { "name": "Mirtazapine", "price": 17 },
+        { "name": "Trazodone", "price": 21 }
+    ],
+    "antihistamines": [
+        { "name": "Loratadine", "price": 10 },
+        { "name": "Cetirizine", "price": 12 },
+        { "name": "Fexofenadine", "price": 15 },
+        { "name": "Diphenhydramine", "price": 8 },
+        { "name": "Chlorpheniramine", "price": 14 },
+        { "name": "Hydroxyzine", "price": 16 },
+        { "name": "Desloratadine", "price": 20 },
+        { "name": "Bilastine", "price": 18 }
+    ],
+    "antihypertensives": [
+        { "name": "Lisinopril", "price": 15 },
+        { "name": "Amlodipine", "price": 12 },
+        { "name": "Losartan", "price": 14 },
+        { "name": "Metoprolol", "price": 18 },
+        { "name": "Propranolol", "price": 20 },
+        { "name": "Carvedilol", "price": 17 },
+        { "name": "Valsartan", "price": 25 },
+        { "name": "Hydrochlorothiazide", "price": 22 }
+    ]
+}

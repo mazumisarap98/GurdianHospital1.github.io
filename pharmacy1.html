@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian Care Medical Center - Pharmacy</title>
+    <link rel="stylesheet" href="pharmacy1.css">
+    <link rel="icon" href="favicon_io/favicon.ico">
+    
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="LOGO.webp" alt="Hospital Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs&ContactUs.html">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Doctors.html">Doctors</a></li>
+                <li><a href="Reservations.html">Consulting Reservations</a></li>
+                <li><a href="pharmacy1.html">Pharmacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="medicine-categories">
+            <h2>Our Pharmacy Categories</h2>
+            <div class="category-container">
+                <div class="category" onclick="showMedicines('analgesics')">
+                    <h3>Analgesics</h3>
+                    <img src="Images/analgesic.jpeg" alt="Analgesics">
+                </div>
+                <div class="category" onclick="showMedicines('antibiotics')">
+                    <h3>Antibiotics</h3>
+                    <img src="Images/antibiotics.jpg" alt="Antibiotics">
+                </div>
+                <div class="category" onclick="showMedicines('antidepressants')">
+                    <h3>Antidepressants</h3>
+                    <img src="Images/antidepressants.jpg" alt="Antidepressants">
+                </div>
+                <div class="category" onclick="showMedicines('antihistamines')">
+                    <h3>Antihistamines</h3>
+                    <img src="Images/antihistamine.webp" alt="Antihistamines">
+                </div>
+                <div class="category" onclick="showMedicines('antihypertensives')">
+                    <h3>Antihypertensives</h3>
+                    <img src="Images/antihypertensives.jpeg" alt="Antihypertensives">
+                </div>
+            </div>
+        </section>
+
+        <section id="medicine-list">
+            <h2 id="medicine-title">Select a Category to View Medicines</h2>
+            <div id="medicine-items"></div>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-body"></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total Price</td>
+                        <td id="total-price">LKR 0.00</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <button id="add-to-favourites">Add to Favourites</button>
+            <button id="apply-favourites">Apply Favourites</button>
+
+            <!-- Add the Buy Now button here --> 
+            <button id="buy-now">Buy Now</button>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Location</h3>
+            <p>GuardianCare Medical Center</p>
+            <p>9/01 Main Street, Colombo 01,</p>
+            <p>Western Province, Sri Lanka</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <p>Email: contact@guardiancare.com</p>
+            <p>Phone: +123-456-7890</p>
+            <p>Emergency Hotline: 1800-123-456</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Branches</h3>
+            <p>Main Branch - Colombo</p>
+            <p>R&D Center - Kandy</p>
+            <p>Medical Branch - Jaffna</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Awards</h3>
+            <p>Best Medical Center - 2022</p>
+            <p>Excellence in Patient Care - 2021</p>
+            <p>Innovative Healthcare Award - 2020</p>
+        </div>
+    </footer>
+
+    <script src="pharamacy1.js"></script>
+</body>
+</html>
+
